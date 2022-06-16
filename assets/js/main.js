@@ -16,9 +16,7 @@
 			'small-to-xlarge':  '(min-width: 481px) and (max-width: 1680px)'
 		});
 
-	// Stops animations/transitions until the page has ...
-
-		// ... loaded.
+	// Stops animations/transitions until the page has loaded.
 			$window.on('load', function() {
 				window.setTimeout(function() {
 					$body.removeClass('is-preload');

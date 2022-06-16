@@ -2,6 +2,7 @@
 fetch(`https://www.breakingbadapi.com/api/characters?category=Breaking+Bad`)
         .then(res => res.json()) // parse response as JSON
         .then(data => {
+          console.log(data)
             let spotlight1 = data[Math.floor(Math.random()*data.length)]
             document.querySelector("#spot1").src = spotlight1.img
             document.querySelector("#spotname").innerText=spotlight1.name

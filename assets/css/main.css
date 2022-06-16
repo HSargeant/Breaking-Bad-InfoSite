@@ -5,11 +5,7 @@
    font-family:  sans-serif;
 
 }
-/*
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -129,6 +125,7 @@ body, input, select, textarea {
   @media screen and (max-width: 360px) {
     body, input, select, textarea {
       font-size: 9pt; } }
+      
 
 a {
 
@@ -589,7 +586,7 @@ table {
     border-left: 0;
     border-right: 0; }
     table tbody tr:nth-child(2n + 1) {
-      background-color: rgba(230, 235, 237, 0.25); }
+      background-color: rgba(199, 206, 209, 0.121); }
   table td {
     padding: 0.75em 0.75em; }
   table th {
@@ -803,6 +800,13 @@ button,
           margin-bottom: 0; }
           .posts article:last-child:after {
             display: none; } }
+
+            /*
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
 
 /* Wrapper */
 #wrapper {
