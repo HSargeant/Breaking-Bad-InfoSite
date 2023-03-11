@@ -150,11 +150,13 @@ let hector = "images/Hector_BCS.jpg"
 document.querySelector("button").addEventListener("click", getFetch) //add event listener to submit button
 
 async function getFetch() {  
-  let url = `https://breakingbadapi.com/api/quote/random?series=Breaking+Bad`
+  // let url = `https://breakingbadapi.com/api/quote/random?series=Breaking+Bad`
+  let url = `https://api.breakingbadquotes.xyz/v1/quotes`
     
    await fetch(url)  // get pic from API
       .then(res => res.json())
       .then(data => {    // place pic into the document
+        console.log(data[0])
 
 
         document.querySelector('h1').innerText = data[0].author
@@ -177,6 +179,9 @@ async function getFetch() {
       img.src=hank
         break
     case 'Gus Fring':
+      img.src=gus
+        break
+    case "Gustavo Fring":
       img.src=gus
         break
     case 'Jesse Pinkman':
